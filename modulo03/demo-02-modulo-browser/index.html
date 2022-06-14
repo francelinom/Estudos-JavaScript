@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="matematica.js"></script>
+    <script src="main.js"></script>
+    <title>Modulo de Browser</title>
+</head>
+<body>
+    <form>
+        <label for="tipoOperacao">Tipo de operacao</label>
+        <select name="tipoOperacao" id="tipoOperacao">
+            <option value="dividir">Dividir</option>
+            <option value="subtrair">Subtrair</option>
+        </select>
+        <br/>
+        <br/>
+        <label for="valor1">Valor 1</label>
+        <input type="number" id="valor1">
+        <br/>
+        <br/>
+        <label for="valor2">Valor 2</label>
+        <input type="number" id="valor2">
+        <br/>
+        <br/>
+        <input type="button" value="calcular" id="btnCalcular">
+        <input type="reset" value="limpar" id="btnLimpar">
+        <br/>
+        <output id="resultado">Aqui vai o resultado</output>
+    </form>
+</body>
+</html>
