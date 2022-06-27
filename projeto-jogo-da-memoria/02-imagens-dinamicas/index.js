@@ -1,9 +1,10 @@
 function onLoad() {
-    const heroi = {
-        img: './arquivo/batman.png',
-        nome: 'batman'
+    const dependencias = {
+        tela: Tela //a classe Tela é global
     }
-    const codigoHtml = Tela.obterCodigoHtml(heroi);
+    // inicializando o jogo da memoria
+    const jogoDamemoria = new JogoDaMemoria(dependencias);
+    jogoDamemoria.inicializar();
 }
 
-window.onLoad = onLoad;
+window.onload = onLoad;
