@@ -10,6 +10,7 @@ const ID_MENSAGEM = 'mensagem';
 const CLASSE_INVISIVEL = 'invisible';
 const ID_CARREGANDO = 'carregando';
 const ID_CONTADOR = 'contador';
+const ID_BTN_MOSTRAR_TUDO = 'mostrarTudo';
 const MENSAGENS = {
     sucesso: {
         texto: 'Combinação correta!',
@@ -106,5 +107,15 @@ class Tela {
          */
         const idDoIntervalo = setInterval(atualizarTexto, 1000);
         return idDoIntervalo;
+    }
+
+    static limparContador(idDoIntervalo) {
+        clearInterval(idDoIntervalo);
+        document.getElementById(ID_CONTADOR).innerHTML = '';
+    }
+
+    static configurarBotaoMostrarTudo(funcaoOnClick) {
+        const btnMostrarTudo = document.getElementById(ID_BTN_MOSTRAR_TUDO);
+        btnMostrarTudo.onclick = funcaoOnClick;
     }
 }
