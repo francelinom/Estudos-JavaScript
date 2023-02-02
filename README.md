@@ -1,4 +1,4 @@
-## Estudos-JavaScript.
+## Estudos-JavaScript
 
 ## Descrição:
 <p>Estudo sobre JS com aplicando tecnicas do básico até tecnicas um pouco mais avançadas. Ao final do estudo tem um jogo da memoria para poder
